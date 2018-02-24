@@ -1,5 +1,5 @@
 #!/bin/bash
 
-. __invoke_it__.sh
+. $(dirname "$0")/__invoke_it__.sh
 
 invoke_it "POST"

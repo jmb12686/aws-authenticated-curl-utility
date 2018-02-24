@@ -7,8 +7,8 @@ if [ "${__sign_it__}" = true ] ; then
     return 0
 fi
 
-. __utils__.sh
-. __variables__.sh
+. $(dirname "$0")/__utils__.sh
+. $(dirname "$0")/__variables__.sh
 
 ## http://docs.aws.amazon.com/general/latest/gr/sigv4-create-canonical-request.html
 function task_1() {

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-. __os_openssl__.sh
-. __variables__.sh
-. __sign_it__.sh
+. $(dirname "$0")/__os_openssl__.sh
+. $(dirname "$0")/__variables__.sh
+. $(dirname "$0")/__sign_it__.sh
 
 function invoke_it() {
     local method="$1"

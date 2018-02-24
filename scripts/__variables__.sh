@@ -4,7 +4,7 @@ if [ "${__variables__}" = true ] ; then
     return 0
 fi
 
-. __utils__.sh
+. $(dirname "$0")/__utils__.sh
 
 ## parse arguments
 
